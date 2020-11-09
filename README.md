@@ -5,6 +5,8 @@
 לבחור באפשרות אחת מתוך כמה אפשרויות. 
 כל שחקן מייחס ערך מסויים לכל אחת מהאפשרויות, לפי
 המחלקה הבאה:
+
+
 class Agent:
 value(option:int)->float:
 """
@@ -17,11 +19,17 @@ value(option:int)->float:
 כל אפשרות מיוצגת ע"י מספר שלם
 ובודק האם אפשרות 1 היא שיפור פארטו של אפשרות 2:
 
+
+
 def isParetoImprovement(agents:List[Agent], option1:int,
 option2:int)->bool:
 
+
+
  אלגוריתם המקבל מערך של שחקנים, אפשרות, ומערך של כל האפשרויות, ובודק האם
 האפשרות הנתונה יעילה פארטו:
+
+
 
 def isParetoOptimal(agents:List[Agent], option:int,
 allOptions:List[int])->bool:
